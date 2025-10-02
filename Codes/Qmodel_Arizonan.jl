@@ -1,7 +1,7 @@
 #Stage 1: 30,000 iterations would work.
 #Stage 2: 30,000 iterations would work.
 
-### This steps loads Julia packages
+### This steps loads Julia packages.
 using MAT  
 using Plots
 using Measures
@@ -33,7 +33,7 @@ Dead = Dead[Id[2]:end]
 Time = Time[Id[2]:end]
 
 
-### This step initializes the neural network architecture
+### This step initializes the neural network architecture.
 
 ann = Chain(Dense(3,10,relu),  Dense(10,1))
 p1,re = Flux.destructure(ann)
